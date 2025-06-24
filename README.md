@@ -21,4 +21,4 @@ GNPV merupakan modifikasi dari Net Present Value (NPV) standar yang memasukkan f
 
 Yang dibutuhkan untuk menghitung GNPV, rumus yang digunakan:
 
-$$\left GNPV = \sum_{t=0}^{n} \frac{CF_t+E_t}{(1+r)^t}\-1$$
+$$GNPV = \sum_{t=0}^{n} \frac{CF_t+E_t}{(1+r)^t}\-1$$
