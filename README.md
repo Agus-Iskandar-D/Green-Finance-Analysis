@@ -11,7 +11,7 @@ Empat nilai yang dicari dalam menganalisis keuangan hijau, yakni Green Net Prese
 
 ## 🍀GNPV
 
-GNPV merupakan modifikasi dari Net Present Value (NPV) standar yang memasukkan faktor lingkungan untuk mengevaluasi kelayakan finansial proyek hijau. Data yang digunakan adalah dataset finansial yang berisi field sebagai berikut:
+GNPV merupakan modifikasi dari Net Present Value (NPV) standar yang memasukkan faktor lingkungan, yakni emisi, untuk mengevaluasi kelayakan finansial proyek hijau. Data yang digunakan adalah dataset finansial yang berisi field sebagai berikut:
 | Nama Field  | Deskripsi Detail |
 | ------------- | ------------- |
 | `Invesment_Cost`  | Dana yang diinvestasikan  |
