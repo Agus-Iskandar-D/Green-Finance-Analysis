@@ -1,4 +1,5 @@
 # Green Finance Analysis
+
 ---
 
 ![ilustrasi green finance](https://github.com/Agus-Iskandar-D/Green-Finance-Analysis/blob/main/ilustrasi%20green%20finance%20analysis.png)
@@ -20,8 +21,8 @@ GNPV merupakan modifikasi dari Net Present Value (NPV) standar yang memasukkan f
 
 Yang dibutuhkan untuk menghitung GNPV, rumus yang digunakan:
 
-$
+$$
 
 GNPV = \sum_{t=0}^{n} \frac{CF_t}{(1+r)^t}
 
-$
+$$
