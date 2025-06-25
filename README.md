@@ -6,20 +6,12 @@
 
 ## 📝Pendahuluan
 
-Green Finance atau dalam bahasa Indonesia keuangan hijau merupakan aktivitas keuangan yang memastikan proyek menghasilkan dampak positif bagi lingkungan atau membuat lingkungan lebih baik.
-Empat nilai yang dicari dalam menganalisis keuangan hijau, yakni Green Net Present Value (GNPV), Carbon Return in Invesment (CROI), Social Return of Invesment (SROI), Economic Risk Adjustment Factor (ERAF), dan Geospatial Risk Factor (GRI).
+Green Finance atau dalam bahasa Indonesia keuangan hijau merupakan aktivitas keuangan yang memastikan proyek menghasilkan dampak positif bagi lingkungan atau membuat lingkungan lebih baik.Empat nilai yang dicari dalam menganalisis keuangan hijau, yakni Green Net Present Value (GNPV), Carbon Return in Invesment (CROI), Social Return of Invesment (SROI), Economic Risk Adjustment Factor (ERAF), dan Geospatial Risk Factor (GRI).
 
 ## 🍀GNPV
 
-GNPV merupakan modifikasi dari Net Present Value (NPV) standar yang memasukkan faktor lingkungan, yakni emisi, untuk mengevaluasi kelayakan finansial proyek hijau. Data yang digunakan adalah dataset finansial yang berisi field sebagai berikut:
-| Nama Field  | Deskripsi Detail |
-| ------------- | ------------- |
-| `Invesment_Cost`  | Dana yang diinvestasikan yang juga disebut `Invesment_Amount'  |
-| `Revenue_Stream` | Arus Pendapatan, yakni jumlah pendapatan |
-| `Debt_Ration`  | Rasio Utang, yakni perbandingan total leabilities (kewajiban) dengan total aset.  |
-| `Payment_Delay` | Penundaan Pembayaran, yakni pembayaran mengalamai penundaan dibayar dari jatuh tempo|
-
-Yang dibutuhkan untuk menghitung GNPV, rumus yang digunakan:
+GNPV merupakan modifikasi dari Net Present Value (NPV) standar yang memasukkan faktor lingkungan, yakni emisi, untuk mengevaluasi kelayakan finansial proyek hijau.
+Rumus yang dibutuhkan untuk menghitung GNPV adalah:
 
 $$GNPV = \sum_{t=0}^{n} \frac{CF_t+E_t}{(1+r)^t}\-I_0$$
 
@@ -66,7 +58,7 @@ $$ERAF = 1 + w_1({\frac{I_r - I_r,base}{I_r,base}}) + w_2({\frac{U_r - U_r,base}
 - $U_r,base$: tingkat penganguran dasar, yang diambil dari rata-rata data historis
 - $G_g$ : Pertumbuhan PDB saat ini
 - $G_g,base$ : Pertumbuha PDB dasar, yang diambil dari rata-rata data historis
-- $w_1, w_2, w_3$: bobor relatif dimana jika digabungkan nilainya menjadi bilang bulat 1
+- $w_1, w_2, w_3$: bobot relatif dimana jika digabungkan nilainya menjadi bilang bulat 1
 
   Jika $ERAF$ > 1 artinya meningkatkan risiko, jika $ERAF$ < 1, artinya menurunkan risiko
 
@@ -74,5 +66,100 @@ $$ERAF = 1 + w_1({\frac{I_r - I_r,base}{I_r,base}}) + w_2({\frac{U_r - U_r,base}
 
 Geospatial Riks Index (GRI) merupakan skor tingkat risiko berbasis lokasi untuk mengukur risiko berbasis lokasi dengan menggabungkan faktor-faktor spasial. GRI dihitung dengan rumus sebagai berikut:
 
-$$GRI = w_1S_hazard$$
+$$GRI = w_1S_hazard + w_2S_proximity + w_3S_landuse$$
+
+- $S_hazard$ : Skor normalisasi bencana alam berdasarkan data histori atau peta risiko BNPB/BMKG. Nilainya 0-1
+- $S_proximity$ : Skor normalisasi kedekatan dengan kawasan lindung dengan skala 0-1.
+- $S_landuse$ : Skor dampak normalisasi perubahan lahan dengan skala 0-1.
+- $w_1, w_2, w_3$ : bobot relatif dengan menggunakan analisis Analytical Hierarchy Process
+
+Jika GRI > 0.7, maka proyek memerlukan enhance due diligence, yakni investigasi lebih lanjut dan kemungkinan proyek ditolak.
+
+## 🗂️Dataset
+
+Untuk melakukan green finance analysis disediakan lima dataset, yakni fincancial dataset, environmental dataset, social dataset, economic dataset, dan geospatial dataset
+
+### 💸Financial Dataset
+
+Financial dataset berisi:
+
+| Nama Field  | Deskripsi Detail |
+| ------------- | ------------- |
+| `Project_ID`  | identitas unik dari proyek  |
+| `Invesment_Cost`  | Dana yang diinvestasikan yang juga disebut `Invesment_Amount'  |
+| `Revenue_Stream` | Arus Pendapatan, yakni jumlah pendapatan |
+| `Debt_Ration`  | Rasio Utang, yakni perbandingan total leabilities (kewajiban) dengan total aset.  |
+| `Payment_Delay` | Penundaan Pembayaran, yakni pembayaran mengalamai penundaan dibayar dari jatuh tempo|
+| `Konteks_Proyek`  | Penjelasan dan kondisi proyek berkaitan dengan pendaan dan operasional  |
+| `Status_Rank`  | Peringkat proyek berdasarkan kondisi keuangannya  |
+
+
+### 🌱 Environmental Dataset
+
+Environmental dataset beisi:
+
+| Nama Field  | Deskripsi Detail |
+| ------------- | ------------- |
+| `Project_ID`  | identitas unik dari proyek  |
+| `CO2_Reduction`  | Pengurangan emisi karbon dalam ton  |
+| `Energy_Output` | Energi yang dihasilkan |
+| `Environmental_Risk_Index`  | indek risiko terhadap lingkungan  |
+| `Konteks_Lingkungaa`  | Penjelasan dan kondisi proyek terhadap lingkungan  |
+| `Peringkat_Dampak`  | Peringkat proyek berdasarkan dampaknya terhadap lingkungan  |
+
+
+### 👥 Social Dataset
+
+Social Dataset berisi:
+
+| Nama Field  | Deskripsi Detail |
+| ------------- | ------------- |
+| `Project_ID`  | identitas unik dari proyek  |
+| `Land_Status`  | Status lahan proyek  |
+| `Community_Support` | Tingkat keterlibatan proyek dalam mendukun masyrakat sekitar |
+| `Population_Density`  | Tingkat kepadatan penduduk, yakni jumlah penduduk per luas wilayan  |
+| `Konteks_Sosial`  | Penjelasan dan kondisi proyek terkait kondisi sosial sekitar proyek  |
+| `Tingkat_Konflik`  | Peringkat proyek berdasarkan potensi konflik yang terjadi dengan masyarakat |
+
+
+### 👥 Economic Dataset
+
+Economic Dataset berisi:
+
+| Nama Field  | Deskripsi Detail |
+| ------------- | ------------- |
+| `Project_ID`  | identitas unik dari proyek  |
+| `GDP_Growth`  | Pertumbuhan GDP yang dihasilkan oleh proyek |
+| `Interest_Rate` | Tingkat suku bunga |
+| `Bond_Yield`  | Imbal hasil obligasi  |
+| `Konteks_Ekonomi`  | Penjelasan dan kondisi proyek terkait konteks ekonomi  |
+| `Daya_Tarik_Investasi`  | Peringkat proyek berdasarkan tikngat investasi |
+
+
+### 👥 Geospatial Dataset
+
+Geospatial Dataset berisi:
+
+| Nama Field  | Deskripsi Detail |
+| ------------- | ------------- |
+| `Project_ID`  | identitas unik dari proyek  |
+| `Solar Irradiance`  | seberapa banyak "sinar" matahari yang jatuh pada suatu area tertentu pada waktu tertentu, biasanya diukur dalam watt per meter persegi (W/m²) |
+| `Water_Flow` | Aliran air yang ada |
+| `Distance_to_Grid`  | Jarak proyek kepada jaringan listrik yang sudah ada  |
+| `Konteks_Geospasial`  | Penjelasan dan kondisi proyek terkait geospasial  |
+| `Efisiensi_Lahan`  | Peringkat proyek efisiensi penggunaan lahan |
+
+
+## 📊Analisis
+
+Dataset yang tersedia tidak langsung memberikan vaariabel data yang bisa menghitung GNPV, CROI<, SROI, ERAF, dan GRI. Untuk itu diperlukan perhitungan untuk mencari variabel-variabel yang dibutuhkan. Proses analisis menggunakan Python dengan librai Pandas dan Numpy.
+
+### Query 1: Mencari nilai GNVP
+
+Tujuan: Mencari nilai GNVP
+Konsep: loop for untuk menghitung berulang setiap row, pandas dan numpy untuk melakukan perhitungan
+Output: Menampilkan nilan GNVP
+
+Dataset utama yang digunakan adalah Financial Dataset. Pada dataset tersebut sudah tersedian Investasi_Cost. Untuk nilai pengurangan emisi, data diambil dari Environmental Dataset. Untuk mencari nilai $CF_t$ dan $r$ adalah...
+
 
