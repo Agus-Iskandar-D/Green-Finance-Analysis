@@ -58,4 +58,4 @@ Jika $SROI$ > 1, makan proyek tersebut memberikan dampak sosial yang besar. Maki
 
 Economic Risk Adjustment Factor (ERAF) merupakan alat ukur untuk menilai besaran faktor risiko yang dipengaruhi kondisi ekonomi makro. Rumusnya sebagai berikut:
 
-$$ERAF = 1 + w_1{\frac{I_r - I_r,base}{I_r,base}} + w_2{\frac{U_r - U_r,base}{U_r,base}} +w_3{\frac{G_g - G_g,base}{G_g,base}}$$
+$$ERAF = 1 + w_1({\frac{I_r - I_r,base}{I_r,base}}) + w_2({\frac{U_r - U_r,base}{U_r,base}}) +w_3({\frac{G_g - G_g,base}{G_g,base}})$$
