@@ -56,6 +56,20 @@ Jika $SROI$ > 1, makan proyek tersebut memberikan dampak sosial yang besar. Maki
 
 ## 🍀ERAF
 
-Economic Risk Adjustment Factor (ERAF) merupakan alat ukur untuk menilai besaran faktor risiko yang dipengaruhi kondisi ekonomi makro. Rumusnya sebagai berikut:
+Economic Risk Adjustment Factor (ERAF) merupakan tingkat penyesuaian faktor risiko ekonomi. ERAF digunakan sebagai alat ukur untuk menilai besaran faktor risiko yang dipengaruhi kondisi ekonomi makro. Rumusnya sebagai berikut:
 
-$$ERAF = 1 + w_1({\frac{I_r - I_r,base}{I_r,base}}) + w_2({\frac{U_r - U_r,base}{U_r,base}}) +w_3({\frac{G_g - G_g,base}{G_g,base}})$$
+$$ERAF = 1 + w_1({\frac{I_r - I_r,base}{I_r,base}}) + w_2({\frac{U_r - U_r,base}{U_r,base}}) - w_3({\frac{G_g - G_g,base}{G_g,base}})$$
+
+- $I_r$ : tingkat inflasi saat ini
+- $I_r,base$ : tingkat inflasi dasar, yakni tingkat inflasi yang ditetapkan, misalnya tingkat inflasi yang ditetapkan oleh BI
+- $U_r$ : tingkat penganguran yang terjadi saat ini
+- $U_r,base$: tingkat penganguran dasar, yang diambil dari rata-rata data historis
+- $G_g$ : Pertumbuhan PDB saat ini
+- $G_g,base$ : Pertumbuha PDB dasar, yang diambil dari rata-rata data historis
+- $w_1, w_2, w_3$: bobor relatif dimana jika digabungkan nilainya menjadi bilang bulat 1
+
+  Jika $ERAF$ > 1 artinya meningkatkan risiko, jika $ERAF$ < 1, artinya menurunkan risiko
+
+## 🍀GRI
+
+
