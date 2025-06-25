@@ -160,11 +160,11 @@ Tujuan: Mencari nilai GNVP
 Konsep: loop for untuk menghitung berulang setiap row, pandas dan numpy untuk melakukan perhitungan
 Output: Menampilkan nilan GNVP
 
-Dataset utama yang digunakan adalah Financial Dataset. Pada dataset tersebut sudah tersedian Investasi_Cost. Untuk nilai pengurangan emisi, data diambil dari Environmental Dataset. Untuk mencari nilai $CF_t$ dan $r$ adalah...
+Dataset utama yang digunakan adalah Financial Dataset. Pada dataset tersebut sudah tersedian `Investasi_Cost`. Untuk nilai pengurangan emisi, data diambil dari Environmental Dataset. Untuk mencari nilai $CF_t$ dan $r$
 
 ## 📶 Visualisasi Data
 
-Proses visualisasi menggunakan library marpotlib dan seaborn...
+Proses visualisasi menggunakan library marpotlib dan seaborn.
 
 
 ## 💡Hasil dan Kesimpulan
