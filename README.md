@@ -164,7 +164,7 @@ Dataset utama yang digunakan adalah Financial Dataset. Pada dataset tersebut sud
 
 ## 📶 Visualisasi Data
 
-Proses visualisasi menggunakan library marpotlib dan seaborn.
+Proses visualisasi menggunakan library matpotlib dan seaborn.
 
 
 ## 💡Hasil dan Kesimpulan
