@@ -94,7 +94,7 @@ Financial dataset berisi:
 | `Status_Rank`  | Peringkat proyek berdasarkan kondisi keuangannya  |
 
 
-### 🌱 Environmental Dataset
+### 🌱Environmental Dataset
 
 Environmental dataset beisi:
 
@@ -108,7 +108,7 @@ Environmental dataset beisi:
 | `Peringkat_Dampak`  | Peringkat proyek berdasarkan dampaknya terhadap lingkungan  |
 
 
-### 👥 Social Dataset
+### 👥Social Dataset
 
 Social Dataset berisi:
 
@@ -122,7 +122,7 @@ Social Dataset berisi:
 | `Tingkat_Konflik`  | Peringkat proyek berdasarkan potensi konflik yang terjadi dengan masyarakat |
 
 
-### 👥 Economic Dataset
+### 💵Economic Dataset
 
 Economic Dataset berisi:
 
@@ -136,7 +136,7 @@ Economic Dataset berisi:
 | `Daya_Tarik_Investasi`  | Peringkat proyek berdasarkan tikngat investasi |
 
 
-### 👥 Geospatial Dataset
+### 🌏Geospatial Dataset
 
 Geospatial Dataset berisi:
 
