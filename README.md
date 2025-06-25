@@ -6,7 +6,7 @@
 
 ## 📝Pendahuluan
 
-Green Finance atau dalam bahasa Indonesia keuangan hijau merupakan aktivitas keuangan yang memastikan proyek menghasilkan dampak positif bagi lingkungan atau membuat lingkungan lebih baik.Empat nilai yang dicari dalam menganalisis keuangan hijau, yakni Green Net Present Value (GNPV), Carbon Return in Invesment (CROI), Social Return of Invesment (SROI), Economic Risk Adjustment Factor (ERAF), dan Geospatial Risk Factor (GRI).
+Green Finance atau dalam bahasa Indonesia keuangan hijau merupakan aktivitas keuangan yang memastikan proyek menghasilkan dampak positif bagi lingkungan atau membuat lingkungan lebih baik. Green finance analisis berarti analisis keuangan untuk menilai dampak sebuah proyek terhadap lingkungan. Empat nilai yang dicari dalam menganalisis keuangan hijau, yakni Green Net Present Value (GNPV), Carbon Return in Invesment (CROI), Social Return of Invesment (SROI), Economic Risk Adjustment Factor (ERAF), dan Geospatial Risk Factor (GRI). 
 
 ## 🍀GNPV
 
@@ -152,7 +152,7 @@ Geospatial Dataset berisi:
 
 ## 📊Analisis
 
-Dataset yang tersedia tidak langsung memberikan vaariabel data yang bisa menghitung GNPV, CROI<, SROI, ERAF, dan GRI. Untuk itu diperlukan perhitungan untuk mencari variabel-variabel yang dibutuhkan. Proses analisis menggunakan Python dengan librai Pandas dan Numpy.
+Dataset yang tersedia tidak langsung memberikan vaariabel data yang bisa menghitung GNPV, CROI<, SROI, ERAF, dan GRI. Untuk itu diperlukan perhitungan untuk mencari variabel-variabel yang dibutuhkan. Proses analisis menggunakan Python dengan library Pandas dan Numpy.
 
 ### Query 1: Mencari nilai GNVP
 
@@ -161,5 +161,14 @@ Konsep: loop for untuk menghitung berulang setiap row, pandas dan numpy untuk me
 Output: Menampilkan nilan GNVP
 
 Dataset utama yang digunakan adalah Financial Dataset. Pada dataset tersebut sudah tersedian Investasi_Cost. Untuk nilai pengurangan emisi, data diambil dari Environmental Dataset. Untuk mencari nilai $CF_t$ dan $r$ adalah...
+
+## 📶 Visualisasi Data
+
+Proses visualisasi menggunakan library marpotlib dan seaborn...
+
+
+## 💡Hasil dan Kesimpulan
+
+
 
 
