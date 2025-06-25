@@ -32,4 +32,8 @@ $$GNPV = \sum_{t=0}^{n} \frac{CF_t+E_t}{(1+r)^t}\-1$$
 
   Jika $GNPV$ > 0 maka proyek dianggap layak secara finansial dan lingkungan. Semkain besar nilai GNVP, maka proyek semakin menarik
 
-## 🍀 
+## 🍀 CROI
+
+Carbon Return of Investment (CROI) merupakan perhitungan pengembalian investasi yang ditambahkan nilai pengurangan carbon dalam rupiah. CROI digunakan untuk menilai investasi proyek hijau. Rumus yang digunakan untuk menghitungnya adalah sebagai berikut:
+
+$$CROI= \frac\sum_{{t=1}^{N}{R_t*P_c}}{I_0}$$
