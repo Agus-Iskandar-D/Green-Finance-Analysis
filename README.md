@@ -40,7 +40,7 @@ Jika $CROI$ > 1, maka proyek menghasilkan pengurangan karbon lebih besar daripad
 
 Social Return of Investment (SROI) merupakan pengembalian investasi dengan tambahan variabel dampak sosial, bisa berupa tercipatanya lapangan kerja atau penghematan biaya kesehatan. SROI digunakan untuk mengukur nilai lingkungan sosial, lingkungan, dan ekonomi dari investasi sebuah proyek. Berikut rumua perhitungannya:
 
-$$SROI = \frac{\sum{NV_sosial}}{I_0}$$
+$$SROI = \frac{\sum{NV_{sosial}}}{I_0}$$
 
 - $NV_sosial$ : nilai sekarang dari dampak sosial yang diuangkan.Bisa dalam bentuk nilai lapangan pekerjaan yang diciptakan atau biaya penghematan energi yang didapatkan.
 
@@ -50,7 +50,7 @@ Jika $SROI$ > 1, makan proyek tersebut memberikan dampak sosial yang besar. Maki
 
 Economic Risk Adjustment Factor (ERAF) merupakan tingkat penyesuaian faktor risiko ekonomi. ERAF digunakan sebagai alat ukur untuk menilai besaran faktor risiko yang dipengaruhi kondisi ekonomi makro. Rumusnya sebagai berikut:
 
-$$ERAF = 1 + w_1({\frac{I_r - I_r,base}{I_r,base}}) + w_2({\frac{U_r - U_r,base}{U_r,base}}) - w_3({\frac{G_g - G_g,base}{G_g,base}})$$
+$$ERAF = 1 + w_1({\frac{I_r - I_{r,base}}{I_{r,base}}}) + w_2({\frac{U_r - U_{r,base}}{U_{r,base}}}) - w_3({\frac{G_g - G_{g,base}}{G_{g,base}}})$$
 
 - $I_r$ : tingkat inflasi saat ini
 - $I_r,base$ : tingkat inflasi dasar, yakni tingkat inflasi yang ditetapkan, misalnya tingkat inflasi yang ditetapkan oleh BI
@@ -66,7 +66,7 @@ $$ERAF = 1 + w_1({\frac{I_r - I_r,base}{I_r,base}}) + w_2({\frac{U_r - U_r,base}
 
 Geospatial Riks Index (GRI) merupakan skor tingkat risiko berbasis lokasi untuk mengukur risiko berbasis lokasi dengan menggabungkan faktor-faktor spasial. GRI dihitung dengan rumus sebagai berikut:
 
-$$GRI = w_1S_hazard + w_2S_proximity + w_3S_landuse$$
+$$GRI = w_1S_{hazard} + w_2S_{proximity} + w_3S_{landuse}$$
 
 - $S_hazard$ : Skor normalisasi bencana alam berdasarkan data histori atau peta risiko BNPB/BMKG. Nilainya 0-1
 - $S_proximity$ : Skor normalisasi kedekatan dengan kawasan lindung dengan skala 0-1.
