@@ -42,7 +42,7 @@ Social Return of Investment (SROI) merupakan pengembalian investasi dengan tamba
 
 $$SROI = \frac{\sum{NV_{sosial}}}{I_0}$$
 
-- $NV_sosial$ : nilai sekarang dari dampak sosial yang diuangkan.Bisa dalam bentuk nilai lapangan pekerjaan yang diciptakan atau biaya penghematan energi yang didapatkan.
+- $NV_{sosial}$ : nilai sekarang dari dampak sosial yang diuangkan.Bisa dalam bentuk nilai lapangan pekerjaan yang diciptakan atau biaya penghematan energi yang didapatkan.
 
 Jika $SROI$ > 1, makan proyek tersebut memberikan dampak sosial yang besar. Makin tinggi nilainya, artinya makin besar pula dampak sosial yang dihasilkan.
 
@@ -53,11 +53,11 @@ Economic Risk Adjustment Factor (ERAF) merupakan tingkat penyesuaian faktor risi
 $$ERAF = 1 + w_1({\frac{I_r - I_{r,base}}{I_{r,base}}}) + w_2({\frac{U_r - U_{r,base}}{U_{r,base}}}) - w_3({\frac{G_g - G_{g,base}}{G_{g,base}}})$$
 
 - $I_r$ : tingkat inflasi saat ini
-- $I_r,base$ : tingkat inflasi dasar, yakni tingkat inflasi yang ditetapkan, misalnya tingkat inflasi yang ditetapkan oleh BI
+- $I_{r,base}$ : tingkat inflasi dasar, yakni tingkat inflasi yang ditetapkan, misalnya tingkat inflasi yang ditetapkan oleh BI
 - $U_r$ : tingkat penganguran yang terjadi saat ini
-- $U_r,base$: tingkat penganguran dasar, yang diambil dari rata-rata data historis
+- $U_{r,base}$: tingkat penganguran dasar, yang diambil dari rata-rata data historis
 - $G_g$ : Pertumbuhan PDB saat ini
-- $G_g,base$ : Pertumbuha PDB dasar, yang diambil dari rata-rata data historis
+- $G_{g,base}$ : Pertumbuha PDB dasar, yang diambil dari rata-rata data historis
 - $w_1, w_2, w_3$: bobot relatif dimana jika digabungkan nilainya menjadi bilang bulat 1
 
   Jika $ERAF$ > 1 artinya meningkatkan risiko, jika $ERAF$ < 1, artinya menurunkan risiko
@@ -68,9 +68,9 @@ Geospatial Riks Index (GRI) merupakan skor tingkat risiko berbasis lokasi untuk 
 
 $$GRI = w_1S_{hazard} + w_2S_{proximity} + w_3S_{landuse}$$
 
-- $S_hazard$ : Skor normalisasi bencana alam berdasarkan data histori atau peta risiko BNPB/BMKG. Nilainya 0-1
-- $S_proximity$ : Skor normalisasi kedekatan dengan kawasan lindung dengan skala 0-1.
-- $S_landuse$ : Skor dampak normalisasi perubahan lahan dengan skala 0-1.
+- $S_{hazard}$ : Skor normalisasi bencana alam berdasarkan data histori atau peta risiko BNPB/BMKG. Nilainya 0-1
+- $S_{proximity}$ : Skor normalisasi kedekatan dengan kawasan lindung dengan skala 0-1.
+- $S_{landuse}$ : Skor dampak normalisasi perubahan lahan dengan skala 0-1.
 - $w_1, w_2, w_3$ : bobot relatif dengan menggunakan analisis Analytical Hierarchy Process
 
 Jika GRI > 0.7, maka proyek memerlukan enhance due diligence, yakni investigasi lebih lanjut dan kemungkinan proyek ditolak.
