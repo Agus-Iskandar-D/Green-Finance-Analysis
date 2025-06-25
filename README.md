@@ -74,5 +74,5 @@ $$ERAF = 1 + w_1({\frac{I_r - I_r,base}{I_r,base}}) + w_2({\frac{U_r - U_r,base}
 
 Geospatial Riks Index (GRI) merupakan skor tingkat risiko berbasis lokasi untuk mengukur risiko berbasis lokasi dengan menggabungkan faktor-faktor spasial. GRI dihitung dengan rumus sebagai berikut:
 
-$$GRI = w_1S_hazard 
+$$GRI = w_1S_hazard$$
 
