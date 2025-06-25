@@ -169,6 +169,9 @@ Proses visualisasi menggunakan library marpotlib dan seaborn...
 
 ## 💡Hasil dan Kesimpulan
 
+Dari proses analisis dan visualisasi dapat dilihat hasilnnya berdasarkan dataset yang tersedia. Kesimpulan yang dapat diambil:
 
+- Proyek dengan potensi dampak lingkungan yang baik dan kesehatan keuangannya adalah....
+- ...
 
 
