@@ -93,6 +93,16 @@ Financial dataset berisi:
 | `Konteks_Proyek`  | Penjelasan dan kondisi proyek berkaitan dengan pendaan dan operasional  |
 | `Status_Rank`  | Peringkat proyek berdasarkan kondisi keuangannya  |
 
+Adapun variabel-variabel yang menjadi indikator dari kesehatan finansial sebuah proyek yang menunjukan hijau:
+
+| Nama Variabel  | Deskripsi Detail |
+| ------------- | ------------- |
+| `Investment_Amount`  | Jumlah dana yang diinvestasikan.  |
+| `Loan_Intereset_Rate`  | Suku bunga pinjaman (dalam persen per tahun). Suku bunga rendah sering kali mengindikasikan proyek dengan risiko rendah atau adanya insentif keuangan hijau. |
+| `Default_Risk_Score` | Skor kredit atau gagar membayar pinjaman dalam skala 1-100, makin tinggi berarti makin berisiko.  |
+| `Green_Spread_Bond`  | Selisih imbal hasil (dalam basis poin) antara obligasi hijau dan obligasi konvensional dengan profil risiko serupa. Nilai negatif menunjukkan "greenium", yaitu preferensi investor untuk aset hijau. |
+
+
 
 ### 🌱Environmental Dataset
 
